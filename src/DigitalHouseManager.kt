@@ -4,7 +4,6 @@ class DigitalHouseManager () {
     val listaAlunos = mutableListOf<Aluno>()
     val listaProfessores = mutableListOf<Professor>()
     val listaCursos = mutableListOf<Curso>()
-    val listaMatricula = mutableListOf<Matricula>()
 
     fun registrarCurso(nome: String, codigoCurso: Int, quantidadeMaximaDeAlunos: Int) {
         val curso = Curso(nome, codigoCurso, quantidadeMaximaDeAlunos)

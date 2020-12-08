@@ -1,6 +1,6 @@
 open class Curso (val nome: String, val codigoCurso: Int, val quantidadeMaxTurma: Int){
 
-    val listaAlunosMatriculados = mutableListOf<Aluno>()
+    private val listaAlunosMatriculados = mutableListOf<Aluno>()
 
     fun adicionarUmAluno(umAluno: Aluno): Boolean {
         if (listaAlunosMatriculados.size < quantidadeMaxTurma) {
